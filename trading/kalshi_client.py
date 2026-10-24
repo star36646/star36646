@@ -110,13 +110,17 @@ def show(data):
 def place_order(client, args, action):
     if not 1 <= args.price_cents <= 99:
         sys.exit("PRICE_CENTS must be between 1 and 99.")
+    # The V2 endpoint quotes only the YES book: buying YES or selling NO is a
+    # YES bid, buying NO or selling YES is a YES ask at (100 - NO price).
+    yes_bid = (action == "buy") == (args.side == "yes")
+    yes_price = args.price_cents if args.side == "yes" else 100 - args.price_cents
     order = {
         "ticker": args.ticker,
-        "action": action,
-        "side": args.side,
-        "count": args.count,
-        "type": "limit",
-        f"{args.side}_price": args.price_cents,
+        "side": "bid" if yes_bid else "ask",
+        "count": f"{args.count}.00",
+        "price": f"{yes_price / 100:.4f}",
+        "time_in_force": "good_till_canceled",
+        "self_trade_prevention_type": "taker_at_cross",
         "client_order_id": str(uuid.uuid4()),
     }
     max_cost = args.count * args.price_cents
@@ -128,7 +132,7 @@ def place_order(client, args, action):
     if not args.confirm:
         print("Dry run. Re-run with --confirm to send it.")
         return
-    show(client.request("POST", "/portfolio/orders", body=order))
+    show(client.request("POST", "/portfolio/events/orders", body=order))
 
 
 def main():
