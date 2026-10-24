@@ -6,6 +6,8 @@ Context carried over from the "Challenge discussion" session (2026-10-24). Read 
 
 Steven (the user) gave Claude a small Robinhood account and asked it to grow $50 toward $1,000 as fast as it can, by learning day trading and swing trading. There's no deadline. Steven framed it as a role-play ("you have a family to feed") and an experiment. He granted autonomy: **Claude may trade the agentic accounts within the risk rules without asking first, and must report every trade with its reasoning.** Steven later added Kalshi (prediction markets).
 
+Added 2026-10-24: Steven reframed the goal as "sustain yourself": the accounts should eventually cover Claude's own subscription. Claude's answer: noted as the target, but the risk rules stay unchanged. At ~$73 total capital, $20/month would be ~27%/month, which is not a realistic sustained return, so the near-term goal is to grow the base without blowing up. Kalshi focus (Claude's default, since Steven didn't pick): economics + weather.
+
 Ground rules Claude committed to and Steven accepted:
 - No promise of "profit every day". Flat days happen, and skipping a bad setup is correct.
 - No pump-and-dump plays, no margin, no options, no shorting, no averaging down.
