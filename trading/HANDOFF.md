@@ -53,3 +53,7 @@ Ground rules Claude committed to and Steven accepted:
 ## Branch
 
 Everything is on `claude/inspiring-goodall-ds655q` in `star36646/star36646`. Commit and push playbook or trade-log changes there. Don't open a PR unless asked.
+
+## Kalshi log
+
+- 2026-10-24 3:09pm ET: Steven placed his own trade (not Claude's): moved funds to shard 2, bought 94.86 YES on KXBTC15M-26OCT241515-15 at 23¢ ($21.82), sold 78 seconds later at 12¢ ($11.38). Loss ≈ $10.43 + fees. Kalshi balance after: $10.98 (shard 0 $0.29, shard 2 $10.69). Claude's bot placed no trades. The daily loss limit ($5) and weekly limit ($10) were both passed, so Claude stopped the BTC bot for the day.
