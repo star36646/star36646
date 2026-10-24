@@ -29,6 +29,7 @@ Ground rules Claude committed to and Steven accepted:
 - Verified 2026-10-24: authenticated, **balance $23.29, no positions**.
 - Kalshi API location verification **expires 2026-10-31 1:12 PM EDT**. After that, API trading is restricted until Steven re-verifies at kalshi.com/account/profile.
 - Steven's screenshot also showed a "US Tech 100 Up" position (~$5.13, "10.9x buying power"). It was not in the API positions, so it's probably Kalshi Perps or another app. Leave it alone unless Steven says otherwise.
+- Kalshi splits balances by exchange shard. Sports/weather markets are on shard 0; 15-minute Bitcoin (KXBTC15M) is on shard 2. On 2026-10-24 Steven had Claude move $5 to shard 2 for BTC windows (transfer d04d216c): shard 0 $18.30, shard 2 $5.00. Transfers use POST /portfolio/intra_exchange_instance_transfer (amount in centicents). BTC 15m rule: only bet when a spot-vs-strike volatility model beats the ask after fees.
 - Script usage: `check`, `balance`, `positions`, `orders`, `markets --series X`, `market T`, `orderbook T`, `buy/sell T yes|no COUNT PRICE_CENTS --confirm`, `cancel ID --confirm`. Buys are capped at 250¢ max cost.
 
 ## Risk rules (both venues)
