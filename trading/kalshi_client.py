@@ -62,6 +62,9 @@ def load_credentials():
     raw_key = os.environ.get("KALSHI_PRIVATE_KEY", "")
     if not key_id or not raw_key:
         sys.exit("KALSHI_API_KEY_ID and KALSHI_PRIVATE_KEY must both be set.")
+    if not re.fullmatch(r"[0-9a-fA-F-]{36}", key_id):
+        sys.exit(f"KALSHI_API_KEY_ID is not a 36-character key ID (got {len(key_id)} characters). "
+                 "Copy the full Key ID from kalshi.com/account/profile.")
     private_key = serialization.load_pem_private_key(normalize_pem(raw_key).encode(), password=None)
     return key_id, private_key
 
