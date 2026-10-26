@@ -102,3 +102,7 @@ Starting balance: **$50.00** (2026-10-24)
 - Mind Math Money, *Pullback strategy* (impulse + low-volume pullback); 9 EMA strategy (40–60% retracement "golden zone")
 - SmallCapLab gapper statistics; Barber/Lee/Liu/Odean (Taiwan); Chague/De-Losso/Giovannetti (Brazil)
 - Robinhood Help Center: Day trading / intraday margin (PDT replaced 2026-06-04)
+
+## Daily notes
+
+- **2026-10-26 (Mon):** No trades. Morning: saved gapper scan returned 0 (its RVOL filter is strict pre-market); a looser preview showed CLRO and RENT (both with recent S-1 registrations, a dilution risk), YMAT (no catalyst, repeat pumper) and BRAI (no volume), so all were passed. Afternoon: swing scan returned 69 names. Earnings within the holding window ruled out VTRS/XERS (Nov 5) and CLOV (Nov 4); ARI goes ex-dividend Oct 30; OGN is pinned (likely a pending deal). XERS was weak on a strong market day (SPY +0.6%, QQQ +1.2%) with no reversal trigger. BEKE did trigger (57% pullback on light volume, double bottom at 17.05, broke Friday's high), but at $17.57 with a stop at $17.00 the first target ($18.31) is only 1.3R, below the 2:1 minimum. Watchlist for Tue: BEKE on a dip toward ~$17.30 with a reversal candle (stop $17.00, target $18.31, ~3R).
