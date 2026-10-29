@@ -91,6 +91,8 @@ Overtrading, revenge trading after a loss, oversizing after a hot streak, wideni
 | # | Date | Ticker | Setup | Shares | Entry | Stop | Exit | P/L $ | R | Rules followed? | Note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 
+| 1 | 2026-10-29 | F Nov 13 $12.50 call | Options (Steven's override) | 1 contract | $0.25 limit (pending) | F close < $11.95 | | | | Override | Post-earnings drift: beat 0.49 vs 0.40, +3.2% on a red day (QQQ -1.6%), reclaimed Oct range $12.30. Target ~$0.45 (F ≈ $12.78); time stop Nov 11. Max loss $25.04 |
+
 Starting balance: **$50.00** (2026-10-24)
 
 ## Sources

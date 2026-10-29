@@ -57,3 +57,5 @@ Everything is on `claude/inspiring-goodall-ds655q` in `star36646/star36646`. Com
 ## Kalshi log
 
 - 2026-10-24 3:09pm ET: Steven placed his own trade (not Claude's): moved funds to shard 2, bought 94.86 YES on KXBTC15M-26OCT241515-15 at 23¢ ($21.82), sold 78 seconds later at 12¢ ($11.38). Loss ≈ $10.43 + fees. Kalshi balance after: $10.98 (shard 0 $0.29, shard 2 $10.69). Claude's bot placed no trades. The daily loss limit ($5) and weekly limit ($10) were both passed, so Claude stopped the BTC bot for the day.
+
+- 2026-10-29: Steven explicitly overrode the no-options rule ("You have $50. I do not care what you do. Do options trading make a trade today."). Account 893185652 now has option_level_2. Claude bought 1 F Nov 13 $12.50 call, limit $0.25 (~$25, half the account). Exit plan: sell ~$0.45, sell if F closes < $11.95, time stop Nov 11.
